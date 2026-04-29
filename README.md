@@ -1,7 +1,7 @@
 
 # Farmland Suitability Analysis (Ulaanbaatar, Mongolia)
 GIS- och fjärranalysprojekt för att identifiera jordbrukslämpliga områden med Spatial Multi-Criteria Analysis (SMCA).
-
+![Slutlig lämplighetskarta](result.png)
 ## Innehåll
 - [Mål](#mål)
 - [Studieområde](#studieområde)
@@ -28,6 +28,7 @@ Analysen omfattar området runt Ulaanbaatar, Mongoliet, där vatten är en kriti
   - Användning: lutning, flödesriktning, flödesackumulation och extraktion av vattendrag.
 
 ## Metod
+ ![Flödesdiagram](flow.png)
 1. Förbehandling av rasterdata och harmonisering av projektion.
 2. Markanvändningsklassificering från Landsat 8.
 3. DEM-korrigering (`Fill`) för att eliminera artificiella sänkor.
@@ -41,12 +42,13 @@ Analysen omfattar området runt Ulaanbaatar, Mongoliet, där vatten är en kriti
 7. Spatial Multi-Criteria Analysis (SMCA) och klassning av slutresultat.
 
 ## SMCA-design
-
+![Constraint- och faktorlager](constraints.png)
 ### Constraints (exkluderade områden)
 - Lutning > 15%
 - Skog
 - Urban mark
 - Vatten/våtmark
+
 
 ### Factors (gradvis påverkan)
 - Avstånd till vattendrag (närmare = mer lämpligt)
@@ -59,6 +61,7 @@ Analysen omfattar området runt Ulaanbaatar, Mongoliet, där vatten är en kriti
 Motivering: vattenåtkomst bedömdes som viktigast i studieregionens torra klimat.
 
 ## Resultat
+![Slutlig lämplighetskarta](result.png)
 - Slutkartan klassades i:
   - Hög lämplighet
   - Medelhög lämplighet
