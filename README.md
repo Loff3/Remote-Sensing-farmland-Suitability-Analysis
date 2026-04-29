@@ -9,10 +9,7 @@ GIS- och fjärranalysprojekt för att identifiera jordbrukslämpliga områden me
 - [Metod](#metod)
 - [SMCA-design](#smca-design)
 - [Resultat](#resultat)
-- [Teknikstack](#teknikstack)
-- [Reproducerbarhet](#reproducerbarhet)
 - [Begränsningar](#begränsningar)
-- [Nästa steg](#nästa-steg)
 
 ---
 
@@ -72,19 +69,7 @@ Motivering: vattenåtkomst bedömdes som viktigast i studieregionens torra klima
   - utanför urban/skog/våtmark
 - Projektet visar tydligt hur hydrologi och terräng styr jordbrukspotential i området.
 
-## Teknikstack
-- QGIS / ArcGIS (beroende på implementation)
-- Rasteranalys (Landsat/SRTM)
-- GIS-verktyg för hydrologi och multicriteria analysis
 
-## Reproducerbarhet
-1. Hämta Landsat 8 och SRTM för studieområdet.
-2. Kör projektion/förbehandling.
-3. Skapa markklassificering.
-4. Kör DEM-fill, slope, flow direction och flow accumulation.
-5. Skapa constraints + factors enligt definierade regler.
-6. Vikta faktorlager och kombinera med constraints.
-7. Klassificera slutkartan i 3 lämplighetsnivåer.
 
 ## Begränsningar
 - 30 m upplösning gör smala vattendrag svåra att klassificera exakt.
